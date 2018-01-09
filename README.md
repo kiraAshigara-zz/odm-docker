@@ -35,3 +35,7 @@ this command is command is for deploy the admin app, the code is compiled based 
 ```bash
 cd builder/ && bin/deploy-admin.sh
 ```
+
+## JDPA Configuration
+To Configure JDPA in neetbean go to debugger->attach and set the address to localhost,the port to 9000 for admin or 9001 for the website and the connector like SocketAttach just like the image bellow
+![JDPA](/images/jdpa.png)

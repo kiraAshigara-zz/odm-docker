@@ -7,6 +7,6 @@ rm /usr/local/web/webapps/oil-web.war
 rm -rf /usr/local/web/webapps/oil-web
 cd /dna-om/om-oil/om-oil-web/
 mvn package -DskipTests
-JPDA_ADDRESS=9000 JPDA_TRANSPORT=dt_socket /usr/local/web/bin/catalina.sh jpda stop
+JPDA_ADDRESS=9001 JPDA_TRANSPORT=dt_socket /usr/local/web/bin/catalina.sh jpda stop
 cp /dna-om/om-oil/om-oil-web/target/oil-web.war /usr/local/web/webapps/
-JPDA_ADDRESS=9000 JPDA_TRANSPORT=dt_socket /usr/local/web/bin/catalina.sh jpda start
+JPDA_ADDRESS=9001 JPDA_TRANSPORT=dt_socket /usr/local/web/bin/catalina.sh jpda start
